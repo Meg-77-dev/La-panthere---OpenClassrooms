@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    filter: contrast(0.5);
 }
 
 .b-parallax {
@@ -232,6 +233,7 @@ a:hover {
 .l-bloc h6 a,
 .l-bloc p a {
     color: rgba(0, 0, 0, .6);
+    text-decoration: none;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -320,6 +322,7 @@ a:hover {
     margin-right: -16px;
     float: right;
     z-index: 1;
+    list-style: none;
 }
 
 .nav > li {
@@ -574,6 +577,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
+    filter:contrast(1.50);
 }
 
 .lightbox-caption {
@@ -677,7 +681,20 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
+}
+
+.citation{
+    font-size: 20px;
+    font-style: italic;
+}
+
+.auteur-citation{
+    font-size: 20px;
+}
+
+.titre-portfolio{
+    font-size: 20px;
 }
 
 .tight-width-whitespace {
@@ -702,6 +719,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 h2 {
@@ -741,8 +760,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    filter: contrast(1.50);
 }
-
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
@@ -755,6 +774,7 @@ h4 {
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
     padding: 40px 40px 40px 40px;
+    filter:contrast(0.9);
 }
 
 .bold-link {
@@ -771,20 +791,16 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;;
+    background-color: #99380B;
 }
 
 .tc-white {
     color: #F3976C!important;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .btn-atomic-tangerine {
-    background-color: #F3976C!important;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #99380B;
     color: #FFFFFF!important;
 }
 
@@ -819,10 +835,11 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
+    filter: contrast(1.50);
 }
-
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
+    filter:contrast(1.50);
 }
 
 @media (max-width: 1024px) {
